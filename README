@@ -1,0 +1,16 @@
+end point 
+POST https://api.openai.com/v1/completions
+/**
+fetch("https://api.openai.com/v1/completions",{
+    method: "POST",
+    header: {
+        Authorization: `Bearer ${API_KEY}`,
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        model: "text-davinci-003",
+        promt: "hello, how are you today?",
+        max_tokens: 7
+    })
+})
+**/
